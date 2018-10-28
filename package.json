@@ -1,0 +1,17 @@
+{
+  "name": "msconstanse",
+  "version": "1.0.0",
+  "description": "constanse app on heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CloudSurferCode",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts":{
+    "start": "node index.js"
+  }
+}
