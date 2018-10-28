@@ -53,8 +53,7 @@ bot.command('start', (ctx) => {
 
 
 bot.command('Театр на серпуховке', (ctx) => {
-
-  ctx.reply(null, {
+  ctx.reply('Выбери один из вариантов', null,{
     one_time: false,
     buttons: [
       [
