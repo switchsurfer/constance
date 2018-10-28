@@ -11,9 +11,10 @@ var bot = new Botact({
 
 
 bot.on(function (ctx){
-    ctx.reply('Приветики')
+    ctx.reply('Здравствуй')
 })
 
+/*
 bot.command('start', (ctx) => {
     // via shortcut from context
     ctx.reply('Hi, this is start!')
@@ -42,6 +43,30 @@ bot.command('start', (ctx) => {
     // to multiple users
     bot.reply([ ctx.user_id, 1 ], 'Hi, this is start!')
   })
+*/
+
+bot.command('start', (ctx) => {
+  // via shortcut from context
+  ctx.reply('Hi, this is start!')
+  // via shortcut with keyboard
+  ctx.reply('Yo, this is keyboard?', null, {
+    one_time: false,
+    buttons: [
+      [
+        {
+          action: {
+            type: 'text',
+            payload: {
+              button: 'Hello, world!'
+            },
+            label: 'Hello, world!'
+          },
+          color: 'black'
+        }
+      ]
+    ]
+  })
+
 
 
  //подключаем модули к серверу
