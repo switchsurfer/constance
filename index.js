@@ -16,10 +16,9 @@ bot.on(function (ctx){
 
 
 bot.command('start', (ctx) => {
-    // via shortcut from context
-    ctx.reply('Hi, this is start!')
-    // via shortcut with keyboard
-    ctx.reply('Yo, this is keyboard?', null, {
+    ctx.reply('Здравствуй, куда хочешь сходить?')
+    
+    ctx.reply('Выбери один из вариантов', null, {
       one_time: false,
       buttons: [
         [
@@ -27,21 +26,29 @@ bot.command('start', (ctx) => {
             action: {
               type: 'text',
               payload: {
-                button: 'Hello, world!'
+                button: 'Театр на серпуховке'
               },
-              label: 'Hello, world!'
+              label: 'Театр насерпуховке'
             },
             color: 'primary'
           }
+        ],
+        [
+          {
+            action: {
+              type: 'text',
+              payload: {
+                button: 'Театр мюзикла'
+              },
+              label: 'Театр мюзикла'
+            },
+            color: 'primary'
+          } 
         ]
+
       ]
     })
-    // via function from context
-    ctx.sendMessage(ctx.user_id, 'Hi, this is start!')
-    // via function from instance
-    bot.reply(ctx.user_id, 'Hi, this is start!')
-    // to multiple users
-    bot.reply([ ctx.user_id, 1 ], 'Hi, this is start!')
+    
   })
 
 
