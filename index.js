@@ -28,7 +28,7 @@ bot.command('start', (ctx) => {
               payload: {
                 button: 'Театр на серпуховке'
               },
-              label: 'Театр насерпуховке'
+              label: 'Театр на серпуховке'
             },
             color: 'primary'
           }
