@@ -48,10 +48,46 @@ bot.command('start', (ctx) => {
 
       ]
     })
-    
   })
 
 
+
+bot.command('Театр на серпуховке', (ctx) => {
+
+  ctx.reply(null, {
+    one_time: false,
+    buttons: [
+      [
+        {
+          action: {
+            type: 'text',
+            payload: {
+              button: 'Русское варенье'
+            },
+            label: 'Русское варенье'
+          },
+          color: 'primary'
+        }
+      ],
+      [
+        {
+          action: {
+            type: 'text',
+            payload: {
+              button: 'Коварство и любовь'
+            },
+            label: 'Коварство и любовь'
+          },
+          color: 'primary'
+        } 
+      ]
+
+    ]
+  })
+})
+  
+
+  
 
  //подключаем модули к серверу
 app.use( bodyParser.json() )
