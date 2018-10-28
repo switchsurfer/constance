@@ -4,14 +4,12 @@
   "description": "constanse app on heroku",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "CloudSurferCode",
   "license": "ISC",
   "dependencies": {
+    "botact": "^2.4.2",
     "express": "^4.16.4"
-  },
-  "scripts":{
-    "start": "node index.js"
   }
 }
