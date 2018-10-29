@@ -16,7 +16,7 @@ bot.on(function (ctx){
 
 
 bot.command('start', (ctx) => {
-    ctx.reply('Здравствуй, куда хочешь сходить?')
+    ctx.reply('Куда хочешь сходить?')
     
     ctx.reply('Выбери один из вариантов', null, {
       one_time: false,
@@ -49,6 +49,29 @@ bot.command('start', (ctx) => {
       ]
     })
   })
+
+bot.command('Театр мюзикла', (ctx) => {
+  ctx.reply('Выбери один из вариантов', null, {
+    one_time: false,
+    buttons: [
+      [
+        {
+          action: {
+            type: 'text',
+            payload: {
+              button: 'Театр на серпуховке'
+            },
+            label: 'https://iframeab-pre2160.intickets.ru/node/10902005'
+          },
+          color: 'primary'
+        }
+      ]
+    ]
+  })
+})
+
+
+
 
 
 
