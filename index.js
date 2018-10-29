@@ -59,9 +59,9 @@ bot.command('Театр мюзикла', (ctx) => {
           action: {
             type: 'text',
             payload: {
-              button: 'Театр на серпуховке'
+              button: 'https://iframeab-pre2160.intickets.ru/node/10902005'
             },
-            label: 'https://iframeab-pre2160.intickets.ru/node/10902005'
+            label: 'театр ссылка'
           },
           color: 'primary'
         }
