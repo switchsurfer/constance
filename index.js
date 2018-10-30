@@ -12,21 +12,6 @@ var bot = new Botact({
 
 bot.on(function (ctx){
     ctx.reply('Здравствуй')
-})
-
-
-
-bot.command('Здравствуй', (ctx) => {
-
-  bot.addScene('wizard',
-  (ctx) => {
-    // with shortcut without additional settings
-    ctx.scene.next({ foo: 'bar' })
-    // simple usage with additional settings
-    bot.nextScene(ctx, { foo: 'bar' })
-  }
-)
-
     ctx.reply('https://vk.com/@onetkt-russkoe-varene-kakoe-ono')  
     ctx.reply('Куда хочешь сходить ?', null, {
       one_time: false,
@@ -58,31 +43,7 @@ bot.command('Здравствуй', (ctx) => {
 
       ]
     })
-  })
-
-bot.command('Театр мюзикла', (ctx) => {
-  ctx.reply('Выбери один из вариантов', null, {
-    one_time: false,
-    buttons: [
-      [
-        {
-          action: {
-            type: 'text',
-            payload: {
-              button: 'https://iframeab-pre2160.intickets.ru/node/10902005'
-            },
-            label: 'театр ссылка'
-          },
-          color: 'primary'
-        }
-      ]
-    ]
-  })
 })
-
-
-
-
 
 
 bot.command('Театр на серпуховке', (ctx) => {
