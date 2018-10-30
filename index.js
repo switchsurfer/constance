@@ -25,7 +25,7 @@ bot.on(function (ctx){
               },
               label: 'Театр на серпуховке'
             },
-            color: '#808080'
+            color: 'default'
           }
         ],
         [
@@ -37,7 +37,7 @@ bot.on(function (ctx){
               },
               label: 'Театр мюзикла'
             },
-            color: 'primary'
+            color: 'default'
           } 
         ]
 
