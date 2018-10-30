@@ -25,7 +25,7 @@ bot.on(function (ctx){
               },
               label: 'Театр на серпуховке'
             },
-            color: 'primary'
+            color: '#808080'
           }
         ],
         [
