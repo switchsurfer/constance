@@ -15,7 +15,18 @@ bot.on(function (ctx){
 })
 
 
+
 bot.command('Здравствуй', (ctx) => {
+
+  bot.addScene('wizard',
+  (ctx) => {
+    // with shortcut without additional settings
+    ctx.scene.next({ foo: 'bar' })
+    // simple usage with additional settings
+    bot.nextScene(ctx, { foo: 'bar' })
+  }
+)
+
     ctx.reply('https://vk.com/@onetkt-russkoe-varene-kakoe-ono')  
     ctx.reply('Куда хочешь сходить ?', null, {
       one_time: false,
