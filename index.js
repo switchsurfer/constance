@@ -15,10 +15,9 @@ bot.on(function (ctx){
 })
 
 
-bot.command('start', (ctx) => {
-    ctx.reply('Куда хочешь сходить?')
-    
-    ctx.reply('Выбери один из вариантов', null, {
+bot.command('Здравствуй', (ctx) => {
+    ctx.reply('https://vk.com/@onetkt-russkoe-varene-kakoe-ono')  
+    ctx.reply('Куда хочешь сходить ?', null, {
       one_time: false,
       buttons: [
         [
