@@ -12,7 +12,7 @@ var bot = new Botact({
 
 bot.on(function (ctx){
     ctx.reply('Здравствуй')
-    ctx.reply('https://vk.com/@ms.constance-znakomstvo-s-konstanciei')  
+    ctx.reply('https://vk.com/@onetkt-russkoe-varene-kakoe-ono')  
     ctx.reply('Куда хочешь сходить?', null, {
       one_time: false,
       buttons: [
@@ -21,9 +21,9 @@ bot.on(function (ctx){
             action: {
               type: 'text',
               payload: {
-                button: 'Театр на серпуховке'
+                button: 'Театр'
               },
-              label: 'Театр на серпуховке'
+              label: 'Театр'
             },
             color: 'default'
           }
@@ -33,9 +33,9 @@ bot.on(function (ctx){
             action: {
               type: 'text',
               payload: {
-                button: 'Театр мюзикла'
+                button: 'Выставка'
               },
-              label: 'Театр мюзикла'
+              label: 'Выставка'
             },
             color: 'default'
           } 
@@ -46,7 +46,7 @@ bot.on(function (ctx){
 })
 
 
-bot.command('Театр на серпуховке', (ctx) => {
+bot.command('Театр', (ctx) => {
   ctx.reply('Выбери один из вариантов', null,{
     one_time: false,
     buttons: [
@@ -59,7 +59,7 @@ bot.command('Театр на серпуховке', (ctx) => {
             },
             label: 'Русское варенье'
           },
-          color: 'primary'
+          color: 'default'
         }
       ],
       [
@@ -71,16 +71,21 @@ bot.command('Театр на серпуховке', (ctx) => {
             },
             label: 'Коварство и любовь'
           },
-          color: 'primary'
+          color: 'default'
         } 
       ]
 
     ]
   })
 })
+ 
+bot.command('Русское варенье', (ctx) => {
+  ctx.reply('http://bit.ly/2QeVkFp')
+  })
   
-
-  
+bot.command('Коварство и любовь', (ctx) => {
+  ctx.reply('http://bit.ly/2DcijOn')
+  })  
 
  //подключаем модули к серверу
 app.use( bodyParser.json() )
