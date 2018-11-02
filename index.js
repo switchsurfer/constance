@@ -12,7 +12,7 @@ var bot = new Botact({
 
 bot.on(function (ctx){
     ctx.reply('Здравствуй')
-    ctx.reply('vk.com/@ms.constance-znakomstvo-s-konstanciei')  
+    ctx.reply('https://vk.com/@ms.constance-znakomstvo-s-konstanciei')  
     ctx.reply('Куда хочешь сходить?', null, {
       one_time: false,
       buttons: [
