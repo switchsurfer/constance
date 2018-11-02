@@ -11,9 +11,9 @@ var bot = new Botact({
 
 
 bot.on(function (ctx){
-    ctx.reply('Здравствуй')
+    ctx.reply('Приветствую')
     ctx.reply('https://vk.com/@onetkt-russkoe-varene-kakoe-ono')  
-    ctx.reply('Куда хочешь сходить ?', null, {
+    ctx.reply('Куда хочешь сходить?', null, {
       one_time: false,
       buttons: [
         [
